@@ -65,7 +65,7 @@ facts = input("Hey Wanna Know some Fun Facts about our World [Y/N] ")
 if facts == "n" or facts == "N":
     print('No Problem ')
 
-if facts == "y" or "Y":
+if facts == "y" or facts == "Y":
     print("1. North Korea and Cuba are the only places you can't buy Coca-Cola.")
     time.sleep(4)
     print("2. the longest place name on the planet is 85 letters long")
