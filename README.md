@@ -1,3 +1,3 @@
 # learning_python
 ---
-Codes written during a python course on Youtube. 
+Codes written to practice a python course on Youtube. 
