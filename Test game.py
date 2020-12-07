@@ -8,19 +8,19 @@ elif len(name) > 50:
     print("Name must be maximum of 50 characters")
 
 print('Hi ' + name)
-time.sleep(.50)
+time.sleep(.70)
 
 
          #favourite Color
 
-favourite_color = input('What is your favourite color? ')
-time.sleep(.50)
-print('Seems like we both have same Taste, ' + 'I also like ' + favourite_color )
-time.sleep(2.1)
+favourite_color = input('What is your favourite color.')
+time.sleep(.70)
+print('What a choice ' + favourite_color + ' is so unique ' )
+time.sleep(.70)
 
          #Person Age
 person_age = input('What is your Age? ')
-time.sleep(.50)
+time.sleep(.70)
 print("What a coincidence i am " + person_age + ' too')
 
 import random
@@ -54,12 +54,13 @@ if question == "y" or question == "" or question == "" or question == "":
         if guess < number:
             print("Guess Higher")
         if guess == number:
-            print("You are right! you win! The number was", number, \
-                  "and took you ", tries, " tries")
+            print("You are right! you won! The number was", number, \
+                  "and it took you ", tries, " tries")
 
 
 
          #Facts
+time.sleep(1    )
 
 facts = input("Hey Wanna Know some Fun Facts about our World [Y/N] ")
 if facts == "n" or facts == "N":
