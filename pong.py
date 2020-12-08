@@ -12,6 +12,8 @@ pygame.display.set_caption('Pong')
 # Colors
 
 white = (255, 255, 255)
+red = (255, 0, 0)
+blue = (0, 0, 255)
 black = (0, 0, 0)
 
 # Sprite Classes
@@ -20,7 +22,7 @@ class Paddle1(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.Surface([10, 75])
-        self.image.fill(white)
+        self.image.fill(red)
         self.rect = self.image.get_rect()
         self.points = 0
 
@@ -28,7 +30,7 @@ class Paddle2(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.Surface([10, 75])
-        self.image.fill(white)
+        self.image.fill(blue)
         self.rect = self.image.get_rect()
         self.points = 0
 
@@ -38,7 +40,7 @@ class Ball(pygame.sprite.Sprite):
         self.image = pygame.Surface([10, 10])
         self.image.fill(white)
         self.rect = self.image.get_rect()
-        self.speed = 10
+        self.speed = 15
         self.dx = 1
         self.dy = 1
 
@@ -52,7 +54,7 @@ paddle2 = Paddle2()
 paddle2.rect.x = 715
 paddle2.rect.y = 225
 
-paddle_speed = 10
+paddle_speed = 20
 
 pong = Ball()
 pong.rect.x = 375
@@ -71,7 +73,7 @@ def redraw():
 
     # Title font
     font = pygame.font.SysFont('Comic Sans MS', 30)
-    text = font.render('PONG', False, white)
+    text = font.render('PoNgAlOnGaLoNg', False, white)
     textRect = text.get_rect()
     textRect.center = (750 // 2, 25)
     win.blit(text, textRect)

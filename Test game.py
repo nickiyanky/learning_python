@@ -7,13 +7,13 @@ if len(name) < 3:
 elif len(name) > 50:
     print("Name must be maximum of 50 characters")
 
-print('Hi ' + name)
+print('Hi ' + name + " \U0001F60A") 
 time.sleep(.70)
 
 
          #favourite Color
 
-favourite_color = input('What is your favourite color.')
+favourite_color = input('What is your favourite color? ')
 time.sleep(.70)
 print('What a choice ' + favourite_color + ' is so unique ' )
 time.sleep(.70)
@@ -21,7 +21,7 @@ time.sleep(.70)
          #Person Age
 person_age = input('What is your Age? ')
 time.sleep(.70)
-print("What a coincidence i am " + person_age + ' too')
+print("What a coincidence i am " + person_age + ' too ' + "\U0001F632")
 
 import random
 import time
@@ -86,3 +86,4 @@ if facts == "y" or facts == "Y":
     print("9. The Pokemon characters Hitmonlee and Hitmonchan were named after Bruce Lee and Jackie Chan.")
     time.sleep(4)
     print("10. 99% of the microbes that live inside humans are unknown to science.")
+
