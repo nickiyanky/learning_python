@@ -73,7 +73,7 @@ def redraw():
 
     # Title font
     font = pygame.font.SysFont('Comic Sans MS', 30)
-    text = font.render('PoNgAlOnGaLoNg', False, white)
+    text = font.render('PONG', False, white)
     textRect = text.get_rect()
     textRect.center = (750 // 2, 25)
     win.blit(text, textRect)
